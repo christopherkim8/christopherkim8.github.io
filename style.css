@@ -113,7 +113,7 @@ section{
 }
 .home-content h3{
     margin: 1rem 0;
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 .home-content p{
     font-size: 1.5rem;
@@ -352,6 +352,11 @@ section{
     margin: 1.5rem 0;
     resize: none;
 }
+.contact .error-txt{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display: none;
+}
 .footer{
     background-color: var(--second-bg-color);
     padding: 50px 0;
@@ -398,7 +403,6 @@ section{
         display: block;
     }
     .navbar {
-        
         max-height: 0;
         overflow: hidden;
         opacity: 0;
