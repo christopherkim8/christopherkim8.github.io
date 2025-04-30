@@ -200,6 +200,7 @@ section{
 .services{
     background-color: var(--second-bg-color);
     color: black;
+    width: 100%;
 }
 .services h2{
     color: var(--text-color);
@@ -209,6 +210,7 @@ section{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     gap: 2.5rem;
+    margin-bottom: 5rem;
 }
 .service-box{
     display: flex;
@@ -273,6 +275,8 @@ section{
     cursor: pointer;
     box-shadow: 0 0 5px var(--main-color);
     transition: 0.3s ease;
+    max-width: 400px;
+    width: 100%;
 }
 .project-card:hover{
     box-shadow: 0 0 25px var(--main-color),
@@ -374,7 +378,7 @@ section{
     cursor: pointer;
     display: none;
 }
-@media(max-width:768px){
+@media(max-width:1285px){
     .menu-toggle{
         display: block;
         position: absolute;
@@ -400,7 +404,7 @@ section{
         color: var(--text-color);
     }
     .navbar.active {
-        max-height: 500px; /* Adjust this to fit your menu */
+        max-height: 500px;
         opacity: 1;
         transform: translateY(0);
       }
@@ -415,9 +419,26 @@ section{
     .home-content{
         align-items: center;
         text-align: center;
+        width: 100%;
+    }
+    .home-content h1,
+    .home-content h3
+    {
+        word-wrap: break-word;
+        max-width: 100%;
+        font-size: 4.5rem;
     }
     .home-img img{
-        width: 65vw;
+        width: 56vw;
+    }
+    .services {
+        min-height: auto;
+    }
+    .service-info p {
+        font-size: 1.4rem;
+    }
+    .projects-box {
+        grid-template-columns: 1fr;
     }
     .about{
         flex-direction: column-reverse;
